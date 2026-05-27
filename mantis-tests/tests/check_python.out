@@ -1,0 +1,15 @@
+*** Check Python Installation ***
+
+Python version:3.13.5
+
+Check packages:
+  numpy        (2.4.6   ) -> installed
+  pandas       (3.0.3   ) -> installed
+  torch        (2.11.0+cu128) -> installed
+  mantis       (0.1.0   ) -> installed
+
+Check CUDA
+  Torch CUDA available?: True
+  #CUDA device found:1
+    device_id:1 -> NVIDIA RTX 500 Ada Generation Laptop GPU
+Done with Python checks!
