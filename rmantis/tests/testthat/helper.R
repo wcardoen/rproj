@@ -1,2 +1,0 @@
-library(rmantis)
-library(mockery)

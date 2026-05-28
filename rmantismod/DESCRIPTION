@@ -1,0 +1,11 @@
+Package: rmantismod
+Title: rmantismod
+Version: 0.0.1
+Authors@R: 
+    person("Wim", "Cardoen", , "wcardoen@gmail.com", role = c("aut", "cre"))
+Description: Modified version of rmantis (GPU Implementation)
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0

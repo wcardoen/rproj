@@ -1,4 +1,4 @@
-Simulation started at: '2026-05-27 15:04:00.292971'
+Simulation started at: '2026-05-28 15:59:54.493115'
 
 Checking CUDA
   CUDA available!
@@ -30,5 +30,5 @@ array([[ 14.722752,  19.136967,  27.208073,  34.008884,  39.33709 ,
          69.46237 ,  99.38101 , 155.7512  , 202.70886 ]], dtype=float32)
 
 
-Simulation ended at: '2026-05-27 15:04:07.653507'
-Walltime (sec):       7.3605
+Simulation ended at: '2026-05-28 16:00:03.187056'
+Walltime (sec):       8.6939

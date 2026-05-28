@@ -2,7 +2,7 @@
 #'
 #' Runs the Mantis deep-learning forecast model on a numeric time series,
 #' optionally using a covariate series. Python and the \code{mantis} module
-#' are validated before any calls are made via \code{rmantis_check_python()}.
+#' are validated before any calls are made via \code{mantis_check_python()}.
 #'
 #' @param time_series Numeric vector of observed counts (required).
 #' @param model_dir Character. Directory containing the pretrained \code{.pt}
@@ -42,7 +42,6 @@ mantis_forecast <- function(time_series,
                             debug          = FALSE) {
 
   # --- Input validation -------------------------------------------------------
-
   if (!is.numeric(time_series) || length(time_series) == 0) {
     stop("'time_series' must be a non-empty numeric vector.", call. = FALSE)
   }
@@ -71,7 +70,7 @@ mantis_forecast <- function(time_series,
   }
 
   # --- Python / module check --------------------------------------------------
-  mantis_setup_python(python_exe)   # fix: was incorrectly passing 'exe'
+  mantis_setup_python(python_exe)
   cfg <- mantis_check_python()
   if (debug) cat(sprintf("Python executable: %s\n", cfg$python))
   if (debug) cat(sprintf("model_dir        : %s\n", model_dir))

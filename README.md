@@ -1,7 +1,7 @@
 # rproj
 
 * `mantis`: Modified `mantis` Python code (CPU + GPU)
-* `rmantis`: R wrapper around `mantis` Python code.
+* `rmantismod`: R wrapper around `mantis` Python code.
 * `mantis-tests`: Contains the tests for `mantis` and `rmantis`
 
    **NOTE**: I omitted the `model` subdirectory which MUST
