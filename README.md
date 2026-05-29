@@ -1,8 +1,8 @@
 # mantisproj
 
 * `mantismod`: modified `mantis` `Python` package (CPU + GPU)
-  - the **installation** instructions can be found in: `mantismod/README.md`
-* `rmantismod`: R package based on the modified `mantismod` Python code.
+  - the **installation** instructions can be found [here](https://github.com/wcardoen/mantisproj/blob/main/mantismod/README.md).
+* `rmantismod`: `R` package based on the modified `mantismod` `Python` code.
   - prerequisites: 
     + the installation of `mantismod` (Python module)
     + the following `R` libraries: `devtools`, `reticulate`
