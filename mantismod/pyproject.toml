@@ -1,5 +1,5 @@
 [project]
-name = "mantis"
+name = "mantismod"
 version = "0.1.0"
 description = "A Foundation Model for Mechanistic Disease Forcasting" 
 readme = "README.md"
@@ -16,7 +16,7 @@ requires = ["uv_build>=0.11.14,<0.12.0"]
 build-backend = "uv_build"
 
 [tool.uv_build]
-packages = ["src/mantis"]
+packages = ["src/mantismod"]
 
 [project.optional-dependencies]
 cpu   = ["torch>=2.0"]

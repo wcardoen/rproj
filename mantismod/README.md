@@ -25,14 +25,21 @@ Let `DIR` be installation directory
 - `cd mypy`
 - `uv python install 3.13 -v`   
 - `uv python pin 3.13 -v`      # If you have experience an error, make sure requires-python >= pin_version
-- `uv add "mantis[cu128] @ git+https://github.com/wcardoen/rproj.git#subdirectory=mantis"`
+- installation of different versions of mantis (Choose one)
+  `cu126` : [5.x, 6.x, 7.0, 7.5, 8.0, 8.6, 9.0] i.e. [Maxwell, ..., Hopper]
+  `cu128` : [7.0, 7.5, 8.0, 8.6, 9.0, 10.0, 12.0] i.e. [Volta, ..., Blackwell]
+- thus:
+  * `uv add "mantis[cu126] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+  * `uv add "mantis[cu128] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+  * `uv add "mantis[cpu] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+
 
 ```bash
 uv run python3
 Python 3.13.5 (main, Jul  1 2025, 18:37:36) [Clang 20.1.4 ] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> import mantis
->>> mantis.__version__
+>>> import mantismod
+>>> mantismod.__version__
 '0.1.0'
 ```
 
