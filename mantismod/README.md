@@ -1,4 +1,4 @@
-# Modified version of mantis (python) 
+# Modified version of mantis i.e. mantismod
 
 ## Original code
 
@@ -17,12 +17,14 @@ Several versions of Torch are supported:
 
 ### Installation of mantis in your new python setup  
 
+Let `DIR` be installation directory
+
 - `module load uv`
 - `cd $DIR`
 - `uv init mypy`
 - `cd mypy`
-- `uv python install 3.13 -v`
-- `uv python pin 3.13 -v`
+- `uv python install 3.13 -v`   
+- `uv python pin 3.13 -v`      # If you have experience an error, make sure requires-python >= pin_version
 - `uv add "mantis[cu128] @ git+https://github.com/wcardoen/rproj.git#subdirectory=mantis"`
 
 ```bash
