@@ -15,3 +15,12 @@
     ```R
     R>library(rmantismod)
     ```
+
+  - Help:
+    ```R
+    R>library(rmantismod)
+    R>help(rmantismod)
+    R>help(mantis_cudacheck)
+    R>help(mantis_download_weights)
+    R>help(mantis_forecast)
+    ```
