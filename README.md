@@ -1,4 +1,4 @@
 # rproj
 
-* `mantis`: Modified `mantis` Python code (CPU + GPU)
-* `rmantismod`: R wrapper around the modified `mantis` Python code.
+* `mantismod`: Modified `mantis` Python code (CPU + GPU)
+* `rmantismod`: R wrapper around the modified `mantismod` Python code.
