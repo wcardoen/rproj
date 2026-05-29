@@ -21,7 +21,7 @@ Let `DIR` be installation directory
 
 - `module load uv`
 - `cd $DIR`
-- `uv init mypy`
+- `uv init -p 3.12 mypy`
 - `cd mypy`
 - `uv python install 3.13 -v`   
 - `uv python pin 3.13 -v`      # If you have experience an error, make sure requires-python >= pin_version
@@ -29,9 +29,9 @@ Let `DIR` be installation directory
   `cu126` : [5.x, 6.x, 7.0, 7.5, 8.0, 8.6, 9.0] i.e. [Maxwell, ..., Hopper]
   `cu128` : [7.0, 7.5, 8.0, 8.6, 9.0, 10.0, 12.0] i.e. [Volta, ..., Blackwell]
 - thus:
-  * `uv add "mantis[cu126] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
-  * `uv add "mantis[cu128] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
-  * `uv add "mantis[cpu] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+  * `uv add "mantismod[cu126] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+  * `uv add "mantismod[cu128] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+  * `uv add "mantismod[cpu] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
 
 
 ```bash
@@ -46,12 +46,24 @@ Type "help", "copyright", "credits" or "license" for more information.
 Let `DIR` be directory where `mypy` is installed.
 Then 
 ```bash
-export PYTHONEXE=$DIR/.venv/bin/python3
-which $PYTHONEXE
+export PATH=$DIR/mypy/.venv/bin/:$PATH
+which python3
 ```
 
-### Check the code
+### Some simple tests
 
-In order to do the test, you need to add `pandads` to the installation
-- `cd $DIR`
-- `uv add pandas`
+```bash
+[u0253283@kp298:mypy]$ python3
+Python 3.13.12 (main, Mar  3 2026, 15:01:51) [Clang 21.1.4 ] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+>>> torch.__version__
+'2.12.0+cu126'
+>>> torch.cuda.is_available()
+True
+>>> torch.cuda.device_count()
+1
+>>> torch.cuda.get_device_name(0)
+'NVIDIA GeForce GTX TITAN X'
+```
+
