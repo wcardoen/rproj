@@ -2,7 +2,7 @@
 % Please edit documentation in R/forecast.R
 \name{mantis_forecast}
 \alias{mantis_forecast}
-\title{Forecast with Mantis}
+\title{Forecast with (modified) Mantis}
 \usage{
 mantis_forecast(
   time_series,
@@ -53,7 +53,7 @@ A numeric matrix of forecast samples returned by the Mantis model.
 }
 \description{
 Runs the Mantis deep-learning forecast model on a numeric time series,
-optionally using a covariate series. Python and the \code{mantis} module
+optionally using a covariate series. Python and the \code{mantismod} module
 are validated before any calls are made via \code{mantis_check_python()}.
 }
 \seealso{

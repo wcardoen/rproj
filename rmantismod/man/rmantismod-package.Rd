@@ -6,12 +6,12 @@
 \alias{rmantismod-package}
 \title{rmantismod: modifieds mantis (GPU)}
 \description{
-This is a modified version of rmantis.
-It has GPU support for 1 CUDA device.
+This is a modified version of rmantis which relies on mantismod.
+It has GPU support for 1 CUDA device (Besides CPU support).
 }
 \section{Main functions}{
 
-The core functions of \code{mantismod} are:
+The core functions of \code{rmantismod} are:
 \itemize{
 \item \code{\link{mantis_cudacheck}} - Checks CUDA availability and lists GPU devices
 \item \code{\link{mantis_download_weights}} - Downloads the weights
@@ -31,7 +31,7 @@ res <- mantis_forecast
 }
 
 \references{
-Any papers, books, or URLs your package is based on.
+Paper:\href{https://arxiv.org/abs/2508.12260}{Mantis: A Foundation Model for Mechanistic Disease Forecasting}
 }
 \author{
 Wim R.M. Cardoen \email{wcardoen@gmail.com}
