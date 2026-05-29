@@ -42,9 +42,9 @@ mantis_check_python <- function() {
     )
   }
 
-  if (!reticulate::py_module_available("mantis")) {
+  if (!reticulate::py_module_available("mantismod")) {
     stop(
-      "The Python 'mantis' module is not installed in the current environment.\n",
+      "The Python 'mantismod' module is not installed in the current environment.\n",
       "Install it with: reticulate::py_install('mantismod')",
       call. = FALSE
     )
