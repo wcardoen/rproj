@@ -1,22 +1,22 @@
 # mantisproj
 
-* `mantismod`: modified `mantis` Python code (CPU + GPU)
-  - The **installation** instructions can be found in: `mantismod/README.md`
+* `mantismod`: modified `mantis` `Python` package (CPU + GPU)
+  - the **installation** instructions can be found in: `mantismod/README.md`
 * `rmantismod`: R package based on the modified `mantismod` Python code.
-  - Prerequisites: 
-    + The installation of `mantismod` (Python module)
-    + The following `R` libraries: `devtools`, `reticulate`
-  - Installation:
+  - prerequisites: 
+    + the installation of `mantismod` (Python module)
+    + the following `R` libraries: `devtools`, `reticulate`
+  - installation:
     ```R
     R>library(devtools)
     R>install_github("wcardoen/mantisproj", subdir = "rmantismod")
     ```
-  - Check:
+  - check:
     ```R
     R>library(rmantismod)
     ```
 
-  - Help:
+  - help:
     ```R
     R>library(rmantismod)
     R>help(rmantismod)

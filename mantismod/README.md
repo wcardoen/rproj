@@ -2,10 +2,11 @@
 
 ## Original code
 
-The original code was downloaded from (Carson Dudley's Github)[https://github.com/carsondudley1/Mantis]
+The original code was downloaded from [Carson Dudley's Github](https://github.com/carsondudley1/Mantis)
 
 ## Modifications
-The original code only supported CPUs. It now supports GPUs through Torch.
+
+The original code only supported CPUs. The modified version now supports GPUs through Torch.<br>
 Several versions of Torch are supported:
 * `cpu`
 * `cu121` 
@@ -15,9 +16,9 @@ Several versions of Torch are supported:
 * `cu130` 
 * `cu132`
 
-### Installation of mantis in your new python setup  
+## Installation of `mantis` in your new python setup  
 
-Let `DIR` be installation directory
+Let `DIR` be the base installation directory
 
 - `module load uv`
 - `cd $DIR`
@@ -25,14 +26,14 @@ Let `DIR` be installation directory
 - `cd mypy`
 - `uv python install 3.13 -v`   
 - `uv python pin 3.13 -v`      # If you have experience an error, make sure requires-python >= pin_version
-- installation of different versions of mantis (Choose one)
+- installation of different versions of mantis (**Choose one!**)
   * `cu126` : [5.x, 6.x, 7.0, 7.5, 8.0, 8.6, 9.0] i.e. [Maxwell, ..., Hopper]
-  * `cu128` : [7.0, 7.5, 8.0, 8.6, 9.0, 10.0, 12.0] i.e. [Volta, ..., Blackwell]
-  * thus:
     + `cu126`: `uv add "mantismod[cu126] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+  * `cu128` : [7.0, 7.5, 8.0, 8.6, 9.0, 10.0, 12.0] i.e. [Volta, ..., Blackwell]
     + `cu128`: `uv add "mantismod[cu128] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
+  * `cpu`:
     + `cpu`: `uv add "mantismod[cpu] @ git+https://github.com/wcardoen/mantisproj.git#subdirectory=mantismod"`
-- `uv add pandas`  # Pandas (for subsequent testing)
+- `uv add pandas`  # `pandas` (for subsequent testing)
 
 The `python` executable can be invoked into 2 different ways:
 
